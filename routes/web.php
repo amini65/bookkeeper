@@ -19,7 +19,7 @@ Route::group(['namespace' => 'Auth'] , function (){
 Route::group(['prefix'=>'panel','namespace' => 'Panel'],function (){
     Route::get('/dashboard','DashboardController@index')->name('panel.dashboard');
 
-//    Route::resource('products','ProductController');
+    Route::resource('products','ProductController');
     Route::resource('users','UserController');
 
 });

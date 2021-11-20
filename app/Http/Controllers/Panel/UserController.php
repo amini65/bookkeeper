@@ -17,6 +17,7 @@ class UserController extends Controller
     public $uploadPath = "/upload/users/";
 
 
+
     public function index(UserRepository $userRepository)
     {
         $lists=$userRepository->getUsers();
