@@ -20,10 +20,10 @@
 <div class="container body">
     <div class="main_container">
 
-    @include('Dashboard::layout.sidebar')
+    @include('panel.layouts.sidebar')
 
         <!-- top navigation -->
-    @include('Dashboard::layout.header')
+    @include('panel.layouts.header')
 
         <!-- /top navigation -->
         <!-- /header content -->
@@ -58,15 +58,7 @@
         </div>
         <!-- /page content -->
 
-        <!-- footer content -->
-        <footer class="hidden-print">
-            <div class="pull-left">
-                Gentelella - قالب پنل مدیریت بوت استرپ <a href="https://colorlib.com">Colorlib</a> | پارسی شده توسط <a
-                    href="https://morteza-karimi.ir">مرتضی کریمی</a>
-            </div>
-            <div class="clearfix"></div>
-        </footer>
-        <!-- /footer content -->
+
     </div>
 </div>
 <div id="lock_screen">
@@ -89,6 +81,7 @@
 <script src="{{ asset('panel/js/jquery.min.js') }}"></script>
 <script src="{{ asset('panel/js/bootstrap.min.js') }}"></script>
 <script src="{{ asset('panel/js/custom.min.js') }}"></script>
+<script src="{{ asset('panel/js/laravel.js') }}"></script>
 @yield('js')
 </body>
 </html>
