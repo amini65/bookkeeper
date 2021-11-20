@@ -10,6 +10,14 @@
     "customer name": "نام مشتری",
     "customer nickName": "نام مستعار",
 
+    "products": "محصولات",
+    "product lists": "لیست محصول",
+    "product create": "ایجاد محصول",
+    "product edit": "ویرایش محصول",
+    "create new product": "ایجاد محصول جدید",
+    "product name": "نام محصول",
+    "product code": "کد محصول",
+
     "userName": "نام کاربری ",
     "mobileNumber": "شماره موبایل",
     "image": "تصویر",
@@ -19,5 +27,7 @@
     "flash message delete success": "حذف با موفقیت انجام شد",
     "flash message error": "خطا در ثبت اطلاعات",
     "data confirm": "آیا مطمعن هستین؟",
+    "delete": "حذف",
+    "edit": "ویرایش",
     "form submit": "ثبت"
 }

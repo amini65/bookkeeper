@@ -35,6 +35,11 @@
                             <i class="fa fa-home"></i> {{ __('users')}}
                         </a>
                     </li>
+                    <li>
+                        <a href="{!! action('Panel\ProductController@index')  !!}">
+                            <i class="fa fa-home"></i> {{ __('products')}}
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>

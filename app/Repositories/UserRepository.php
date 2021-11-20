@@ -11,6 +11,10 @@ class UserRepository
     {
         return User::query()->get();
     }
+    public function getUserById($id)
+    {
+        return User::query()->whereId($id)->first();
+    }
 
 
     public function store($request,$image='')
