@@ -24,6 +24,7 @@ class User extends Authenticatable
         'nickName',
         'role',
         'userName',
+        'password',
         'amount',
     ];
 
@@ -35,6 +36,14 @@ class User extends Authenticatable
     protected $hidden = [
         'password',
         'remember_token',
+    ];
+
+    const TYPE_ADMIN=1;
+    const TYPE_CUSTOMER=2;
+
+    const ALL_TYPE=[
+      self::TYPE_ADMIN=>'admin',
+      self::TYPE_CUSTOMER=>'customer'
     ];
 
 

@@ -1,0 +1,23 @@
+{
+    "dashboard": "پیشخوان",
+    "user": "کاربر",
+    "users": "کاربران",
+    "user lists": "لیست کاربران",
+    "user create": "ایجاد کاربران",
+    "user edit": "ویرایش کاربران",
+    "create new user": "ایجاد کاربر جدید",
+
+    "customer name": "نام مشتری",
+    "customer nickName": "نام مستعار",
+
+    "userName": "نام کاربری ",
+    "mobileNumber": "شماره موبایل",
+    "image": "تصویر",
+
+    "flash message create success": "اطلاعات با موفقیت ذخیره شد",
+    "flash message edit success": "ویرایش با موفقیت انجام شد",
+    "flash message delete success": "حذف با موفقیت انجام شد",
+    "flash message error": "خطا در ثبت اطلاعات",
+    "data confirm": "آیا مطمعن هستین؟",
+    "form submit": "ثبت"
+}
