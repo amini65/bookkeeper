@@ -25,13 +25,13 @@ class AccountController extends Controller
     {
         $lists=$accountRepository->getAccounts();
 
-        return view('admin.account.list',compact('lists'))->with('title',$this->listTitle);
+        return view('panel.account.list',compact('lists'))->with('title',$this->listTitle);
     }
 
 
     public function create()
     {
-        return view('admin.account.create')->with('title', $this->createTitle);
+        return view('panel.account.create')->with('title', $this->createTitle);
     }
 
 
@@ -53,7 +53,7 @@ class AccountController extends Controller
 
     public function edit(Account $account)
     {
-        return view('admin.account.edit',compact('account'))->with('title', $this->editTitle);
+        return view('panel.account.edit',compact('account'))->with('title', $this->editTitle);
     }
 
 
