@@ -11,9 +11,22 @@ class UserRepository
     {
         return User::query()->get();
     }
-    public function getUserById($id)
+    public static function getUserById($id)
     {
         return User::query()->whereId($id)->first();
+    }
+
+    public static function saleAmount($user,$amount)
+    {
+        return $user::query()->update([
+            'amount'=>$user->amount-$amount
+        ]);
+    }
+    public static function depositAmount($user,$amount)
+    {
+        return $user::query()->update([
+            'amount'=>$user->amount+$amount
+        ]);
     }
 
 

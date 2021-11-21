@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Requests\Product;
+namespace App\Http\Requests\Transaction;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class ProductStoreRequest extends FormRequest
+class SaleStoreRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -24,7 +24,11 @@ class ProductStoreRequest extends FormRequest
     public function rules()
     {
         return [
-            'name' => ['required', 'string'],
+            'user_id' => ['required', 'exists:users,id'],
+            'product_id' => [ 'required', 'exists:products,id'],
+            'weight' => ['required', 'numeric'],
+            'amount' => ['required', 'numeric'],
+            'date' => ['required']
         ];
     }
 }
