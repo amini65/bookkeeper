@@ -36,6 +36,11 @@
                         </a>
                     </li>
                     <li>
+                        <a href="{!! action('Panel\TransactionController@deposit')  !!}">
+                            <i class="fa fa-home"></i> {{ __('deposit')}}
+                        </a>
+                    </li>
+                    <li>
                         <a href="{!! action('Panel\UserController@index')  !!}">
                             <i class="fa fa-home"></i> {{ __('users')}}
                         </a>

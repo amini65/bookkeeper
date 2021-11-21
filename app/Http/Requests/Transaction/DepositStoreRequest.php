@@ -13,7 +13,7 @@ class DepositStoreRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -24,7 +24,10 @@ class DepositStoreRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            'user_id' => ['required', 'exists:users,id'],
+            'account_id' => [ 'required', 'exists:accounts,id'],
+            'amount' => ['required', 'numeric'],
+            'date' => ['required']
         ];
     }
 }

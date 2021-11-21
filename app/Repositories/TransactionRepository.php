@@ -31,11 +31,11 @@ class TransactionRepository
         $user=UserRepository::getUserById($request->user_id);
         $transaction=Transaction::query()->create([
            'user_id' =>$request->user_id,
-           'type' =>Transaction::TYPE_SALE,
+           'type' =>Transaction::TYPE_DEPOSIT,
            'amount' =>$request->amount,
            'cash' =>$user->amount+$request->amount,
            'date' =>$request->date,
-           'account_id' =>$request->date,
+           'account_id' =>$request->account_id,
         ]);
         UserRepository::depositAmount($user,$request->amount);
     }

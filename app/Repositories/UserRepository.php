@@ -24,6 +24,7 @@ class UserRepository
     }
     public static function depositAmount($user,$amount)
     {
+
         return $user::query()->update([
             'amount'=>$user->amount+$amount
         ]);

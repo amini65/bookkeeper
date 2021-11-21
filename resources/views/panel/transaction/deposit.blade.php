@@ -19,7 +19,7 @@
                 </div>
                 <div class="x_content">
 
-                    <form class="" novalidate="" method="post" action="{{ route('sale.store') }}" enctype="multipart/form-data">
+                    <form class="" novalidate="" method="post" action="{{ route('deposit.store') }}" enctype="multipart/form-data">
                         {!! csrf_field() !!}
                         @if(count($errors) > 0)
                             <div class="alert alert-danger" role="alert">
@@ -36,12 +36,11 @@
                                 <option value="{!! $user->id !!}" {{ (old('user_id')==$user->id)?'selected':'' }}>{!! $user->name !!}</option>
                             @endforeach
                         </x-select>
-                        <x-select name="product_id" placeholder="{{ __('product name') }}">
-                            @foreach(\App\Models\Product::all() as $product)
-                                <option value="{!! $product->id !!}" {{ (old('product_id')==$product->id)?'selected':'' }}>{!! $product->name !!}</option>
+                        <x-select name="account_id" placeholder="{{ __('account name') }}">
+                            @foreach(\App\Models\Account::all() as $account)
+                                <option value="{!! $account->id !!}" {{ (old('account_id')==$account->id)?'selected':'' }}>{!! $account->name !!}</option>
                             @endforeach
                         </x-select>
-                        <x-input type="text" name="weight" placeholder="{{ __('weight') }}" />
                         <x-input type="text" name="amount" placeholder="{{ __('amount') }}" />
                         <div class="col-md-3 col-xs-12 ">
                             <label for="mobile_number" >{{ __('date') }}</label>

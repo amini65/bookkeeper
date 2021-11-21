@@ -22,7 +22,7 @@ class CreateUsersTable extends Migration
             $table->string('nickName',40)->nullable();
             $table->tinyInteger('role')->default(2);
             $table->string('password');
-            $table->boolean('amount')->default(0);
+            $table->integer('amount')->default(0);
             $table->rememberToken();
             $table->timestamps();
         });

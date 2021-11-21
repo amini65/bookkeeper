@@ -27,6 +27,9 @@ Route::group(['prefix'=>'panel','namespace' => 'Panel'],function (){
     Route::group(['prefix'=>'transaction'],function (){
         Route::get('/sale','TransactionController@sale')->name('sale.form');
         Route::post('/sale/store','TransactionController@saleStore')->name('sale.store');
+
+        Route::get('/deposit','TransactionController@deposit')->name('deposit.form');
+        Route::post('/deposit/store','TransactionController@depositStore')->name('deposit.store');
     });
 
 

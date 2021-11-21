@@ -80,7 +80,7 @@
 
 <script src="{{ asset('panel/js/jquery.min.js') }}"></script>
 <script src="{{ asset('panel/js/bootstrap.min.js') }}"></script>
-<script src="{{ asset('panel/js/custom.min.js') }}"></script>
+<script src="{{ asset('panel/js/custom.js') }}"></script>
 <script src="{{ asset('panel/js/laravel.js') }}"></script>
 @yield('js')
 </body>
