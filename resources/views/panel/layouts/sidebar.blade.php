@@ -31,6 +31,11 @@
                         </a>
                     </li>
                     <li>
+                        <a href="{!! action('Panel\TransactionController@sale')  !!}">
+                            <i class="fa fa-home"></i> {{ __('sale')}}
+                        </a>
+                    </li>
+                    <li>
                         <a href="{!! action('Panel\UserController@index')  !!}">
                             <i class="fa fa-home"></i> {{ __('users')}}
                         </a>

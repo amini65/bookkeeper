@@ -18,9 +18,20 @@
     "product name": "نام محصول",
     "product code": "کد محصول",
 
+    "weight": "وزن",
+    "amount": "مبلغ واحد",
+    "date": "ناریخ",
+    "cash": "مبلغ کل",
+    "selected": "انتخاب کنید",
+    "transaction": "تراکنش ها",
+    "sale create": "خرید محصول",
+    "deposit create": "ثبت واریزی",
+
     "userName": "نام کاربری ",
     "mobileNumber": "شماره موبایل",
     "image": "تصویر",
+    "sale": "فروش",
+    "deposit": "واریز",
 
     "flash message create success": "اطلاعات با موفقیت ذخیره شد",
     "flash message edit success": "ویرایش با موفقیت انجام شد",

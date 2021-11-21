@@ -6,14 +6,18 @@ use Illuminate\View\Component;
 
 class Select extends Component
 {
+    public $name;
+    public $placeholder;
+
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($name, $placeholder)
     {
-        //
+        $this->name=$name;
+        $this->placeholder=$placeholder;
     }
 
     /**
