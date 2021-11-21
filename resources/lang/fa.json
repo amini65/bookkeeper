@@ -18,6 +18,15 @@
     "product name": "نام محصول",
     "product code": "کد محصول",
 
+    "accounts": "حساب ها",
+    "account lists": "لیست حساب",
+    "account create": "ایجاد حساب",
+    "account edit": "ویرایش حساب",
+    "create new account": "ایجاد حساب جدید",
+    "account name": "نام حساب",
+    "account card_number": "شماره کارت",
+    "account account_number": "شماره حساب",
+
     "weight": "وزن",
     "amount": "مبلغ واحد",
     "date": "ناریخ",

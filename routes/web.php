@@ -21,6 +21,7 @@ Route::group(['prefix'=>'panel','namespace' => 'Panel'],function (){
 
     Route::resource('products','ProductController');
     Route::resource('users','UserController');
+    Route::resource('accounts','AccountController');
 
     //transaction route
     Route::group(['prefix'=>'transaction'],function (){
