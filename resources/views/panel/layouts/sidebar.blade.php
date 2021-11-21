@@ -26,33 +26,33 @@
                 <h3>عمومی</h3>
                 <ul class="nav side-menu">
                     <li>
-                        <a href="">
+                        <a href="{!! action('Panel\DashboardController@index')  !!}">
                             <i class="fa fa-home"></i> {{ __('dashboard')}}
                         </a>
                     </li>
                     <li>
                         <a href="{!! action('Panel\TransactionController@sale')  !!}">
-                            <i class="fa fa-home"></i> {{ __('sale')}}
+                            <i class="fa fa-shopping-cart"></i> {{ __('sale')}}
                         </a>
                     </li>
                     <li>
                         <a href="{!! action('Panel\TransactionController@deposit')  !!}">
-                            <i class="fa fa-home"></i> {{ __('deposit')}}
+                            <i class="fa fa-credit-card"></i> {{ __('deposit')}}
                         </a>
                     </li>
                     <li>
                         <a href="{!! action('Panel\UserController@index')  !!}">
-                            <i class="fa fa-home"></i> {{ __('users')}}
+                            <i class="fa fa-users"></i> {{ __('users')}}
                         </a>
                     </li>
                     <li>
                         <a href="{!! action('Panel\ProductController@index')  !!}">
-                            <i class="fa fa-home"></i> {{ __('products')}}
+                            <i class="fa fa-tags"></i> {{ __('products')}}
                         </a>
                     </li>
                     <li>
                         <a href="{!! action('Panel\AccountController@index')  !!}">
-                            <i class="fa fa-home"></i> {{ __('accounts')}}
+                            <i class="fa fa-dollar"></i> {{ __('accounts')}}
                         </a>
                     </li>
                 </ul>

@@ -1,7 +1,7 @@
 
 
 
-<div class="col-md-3 col-xs-12 " style="margin-bottom: 20px;height: 20px;">
+<div class="col-md-3 col-xs-12 " style="margin-bottom: 20px;">
     <label >{{ $placeholder }} :</label>
     <select class="form-control select2"  name="{{ $name }}">
         <option value="0">{{__('selected')}}</option>

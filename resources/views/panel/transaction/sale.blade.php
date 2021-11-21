@@ -41,8 +41,8 @@
                                 <option value="{!! $product->id !!}" {{ (old('product_id')==$product->id)?'selected':'' }}>{!! $product->name !!}</option>
                             @endforeach
                         </x-select>
-                        <x-input type="text" name="weight" placeholder="{{ __('weight') }}" />
-                        <x-input type="text" name="amount" placeholder="{{ __('amount') }}" />
+                        <x-input type="number" name="weight" placeholder="{{ __('weight') }}" />
+                        <x-input type="number" name="amount" placeholder="{{ __('amount') }}" />
                         <div class="col-md-3 col-xs-12 ">
                             <label for="mobile_number" >{{ __('date') }}</label>
                                 <input type="text" name="date" id="start"

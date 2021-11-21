@@ -22,6 +22,7 @@
                 <p class="text-muted font-13 m-b-30">
                     <a  href="{{ route('products.create' ) }}" class="btn btn-success btn-lg">ایجاد</a>
                 </p>
+                <div class="table-responsive">
                 <table id="datatable-buttons" class="table table-striped table-bordered">
                     <thead>
                     <tr>
@@ -58,6 +59,7 @@
                     @endif
                     </tbody>
                 </table>
+            </div>
             </div>
         </div>
     </div>
